@@ -10,6 +10,7 @@ class BlogPost(models.Model):
     publication_date = models.DateTimeField(blank=True, null=True)
 
 
+
     def publish(self):
         self.publication_date = datetime.datetime.now()
         self.save()
